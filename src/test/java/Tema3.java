@@ -14,7 +14,6 @@ public class Tema3 {
         driver.get("https://demoqa.com/automation-practice-form");
         Actions actions = new Actions(driver);
 
-//===================Exercitiu 1======================//
         //identificam locatorul cu Xpath pentru placeholder
 
         WebElement firstName = driver.findElement(By.xpath("//input[@placeholder='First Name']"));
