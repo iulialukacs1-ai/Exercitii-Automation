@@ -4,6 +4,15 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+//inchide browserul
+//Verifica titlul paginii -> deschide URL-ul (la alegere, sau https://example.com/), ia titlul paginii, verifica cu Assert titlul
+//Hint: getTitle(), Assert.assertTrue
+//Creaza o clasa care are doua teste: unul care navigheaza la https://example.com/ si inchide browserul; unul care navigheaza la https://www.apple.com/ si inchide browserul.
+//Refactorizeaza clasa de la exercitiul 3 sa foloseasca @BeforeMethod si @AfterMethod
+//Creaza un test prin care se navigheaza la https://example.com si verifica:
+//Titlul nu este null
+//Titlul continte ‘Example’
+
 public class Tema2 {
 //Tema 2
     WebDriver driver;
@@ -53,6 +62,7 @@ public class Tema2 {
 
         Assert.assertNotNull(title);
         Assert.assertTrue(title.contains("GitHub"));
+
     }
 }
 
