@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,7 @@ public class Tema6 {
     //Afișează titlul ambelor taburi
 
     WebDriver driver;
-    WebDriverWait wait; //
+    WebDriverWait wait;
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
