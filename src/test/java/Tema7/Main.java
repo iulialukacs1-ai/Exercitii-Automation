@@ -17,7 +17,7 @@ public class Main {
             System.out.println(dog2.name + " are " + dog2.getAgeInHumanYears() + " ani în ani umani");
 
             // ===== EXERCITIUL 2: BankAccount =====
-            System.out.println("\n===== EXERCITIUL 2: BankAccount =====");
+            System.out.println("===== EXERCITIUL 2: BankAccount =====");
 
             BankAccount cont = new BankAccount("Ion Popescu", 500);
             cont.displayBalance();
@@ -28,7 +28,7 @@ public class Main {
             cont.displayBalance();
 
             // ===== EXERCITIUL 3: Temperature =====
-            System.out.println("\n===== EXERCITIUL 3: Temperature =====");
+            System.out.println("===== EXERCITIUL 3: Temperature =====");
 
             Temperature temp = new Temperature(100);
             System.out.println(temp.celsius + "°C = " + temp.toFahrenheit() + "°F");
@@ -39,7 +39,7 @@ public class Main {
             System.out.println(temp2.celsius + "°C = " + temp2.toKelvin() + " K");
 
             // ===== EXERCITIUL 4: Employee =====
-            System.out.println("\n===== EXERCITIUL 4: Employee =====");
+            System.out.println("===== EXERCITIUL 4: Employee =====");
 
             Employee emp1 = new Employee("Maria Ionescu", 4000);
             Employee emp2 = new Employee("Andrei Popa", 5500);
@@ -53,7 +53,7 @@ public class Main {
             System.out.println(emp2.name + " → Salariu final: " + emp2.getSalary() + " RON");
 
             // ===== EXERCITIUL 5: ShoppingCart =====
-            System.out.println("\n===== EXERCITIUL 5: ShoppingCart =====");
+            System.out.println("===== EXERCITIUL 5: ShoppingCart =====");
 
             ShoppingCart cart = new ShoppingCart();
             cart.addProduct(150.0);

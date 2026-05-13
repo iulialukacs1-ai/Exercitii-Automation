@@ -34,11 +34,11 @@ public class FakeStoreAPI {
 
     @Test
     public void postProductTest() {
-        String title = "";
+        String title = "Automation Course Product";  // fix 1 - title corect
         double price = 99.20;
         String category = "electronics";
 
-        String Payload = "{\n" +
+        String payload = "{\n" +
                 "\"title\" : \"" + title + "\",\n" +
                 "\"price\" : " + price + ",\n" +
                 "\"description\" : \"Created during API automation session\",\n" +
@@ -48,13 +48,12 @@ public class FakeStoreAPI {
 
         given()
                 .header("Content-Type", "application/json")
-                .body("")
+                .body(payload)  // fix 2 - folosesti payload-ul construit
                 .when()
                 .post("https://fakestoreapi.com/products")
                 .then()
                 .statusCode(201)
                 .body("title", equalTo("Automation Course Product"));
-
     }
 
     @Test
@@ -66,9 +65,8 @@ public class FakeStoreAPI {
                 .statusCode(200)
                 .time(lessThan(3000L));
     }
-}
 
-  /*  @Test
+  @Test
     public void productNotExisting() {
         given()
                 .header("Accept", "application/json")
@@ -76,27 +74,12 @@ public class FakeStoreAPI {
                 .get("https://fakestoreapi.com/products/999")
                 .then()
                 .statusCode(200)
-                .body();
+                .body(emptyString());
 
 
 
     }
-
-    @Test
-    public void debug() {
-        String response =
-                given()
-                        .log().all()
-                        .header("Accept", "application/json")
-                        .header("User-Agent", "Mozilla/5.0")
-                        .when()
-                        .get("https://fakestoreapi.com/products/999")
-                        .then()
-                        .log().all()
-                        .extract().asString();
-
-        System.out.println("RESPONSE = [" + response + "]");
-    }*/
+}
 
 
 
