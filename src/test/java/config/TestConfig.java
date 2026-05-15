@@ -9,4 +9,6 @@ public class TestConfig {
     public static final String PRODUCTS_ENDPOINT = "/products";
     public static final String SEARCH_ENDPOINT = PRODUCTS_ENDPOINT +"/search";
     public static final String HEADERS_ENDPOINT = "/headers";
+    public static final String LOGIN_ENDPOINT = "/auth/login";
+    public static final String AUTH_ME_ENDPOINT = "/auth/me";
 }
