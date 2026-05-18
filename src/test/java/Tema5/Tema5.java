@@ -1,4 +1,4 @@
-//Folosind pagina https://practicesoftwaretesting.com/
+package Tema5;//Folosind pagina https://practicesoftwaretesting.com/
 //Accesează o categorie de produse.
 //Folosește filtrele disponibile.
 //Selectează un filtru (ex: brand).
